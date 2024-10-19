@@ -8,7 +8,7 @@ const hre = require("hardhat");
 
 async function main() {
   // CraftNft contract address
-  const CraftNftAddress = "TokenAddress ayega yhn";
+  const CraftNftAddress = "0x07cfAa9A6612cbA01c721f6125CB7F52F5Fe9B37";
   const CraftNftContract = await hre.ethers.getContractAt("CraftNft", CraftNftAddress);
 
   // Wallet to check the NFT balance

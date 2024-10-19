@@ -8,7 +8,7 @@
 const hre = require("hardhat");
 async function main() {
   // CraftNft contract address
-  const deployedContractAddress = "0x56DbC9DD0F204ad429F38426DF52c78d1fcC02e5";
+  const deployedContractAddress = "0x07cfAa9A6612cbA01c721f6125CB7F52F5Fe9B37";
   const CraftNftContract = await hre.ethers.getContractAt("CraftNft", deployedContractAddress);
 
   const ipfsLinks = [

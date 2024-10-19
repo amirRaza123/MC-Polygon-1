@@ -1,4 +1,4 @@
-# Polyproof Project 1
+# Polygon POS
 
 This project implements the CraftNft smart contract and includes various scripts for deploying, minting, and managing NFTs on the Ethereum blockchain.
 

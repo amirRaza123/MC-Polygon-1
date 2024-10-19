@@ -9,9 +9,9 @@ const hre = require("hardhat");
 const fxRootABI = require("../fxRootContractABI.json");
 const CraftNftArtifact = require("../artifacts/contracts/CraftNft.sol/CraftNft.json");
 
-const CraftNftAddress = "0x56DbC9DD0F204ad429F38426DF52c78d1fcC02e5"; 
+const CraftNftAddress = "0x07cfAa9A6612cbA01c721f6125CB7F52F5Fe9B37"; 
 const CraftNftABI = CraftNftArtifact.abi;
-const fxERC20RootContract = "0x3658ccFDE5e9629b0805EB06AaCFc42416850961";
+const fxERC20RootContract = "0xF9bc4a80464E48369303196645e876c8C7D972de";
 const userWallet = "0x59f30181FAfB9E48624166C62941DAF61c34635e"; 
 
 async function main() {
@@ -22,12 +22,12 @@ async function main() {
     const approvalTransaction = await CraftNftContract.approve(fxERC20RootContract, 2);
     await approvalTransaction.wait();
 
-    console.log('Token approval successful');
+    console.log('Approval Confirmed');
 
     const depositTransaction = await fxERC20Root.deposit(CraftNftAddress, userWallet, 2, "0x6556");
     await depositTransaction.wait();
 
-    console.log("Tokens have been deposited successfully");
+    console.log("Tokens deposited successfully");
   
 }
 
